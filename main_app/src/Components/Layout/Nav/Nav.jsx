@@ -1,9 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
-
+import log from './logo_black.png'
+import './Nav.css';
 
 const Nav = () => {
 
-    const navigationEN = [
+    const navigationENG = [
         {
             path : '/',
             name : 'Home'
@@ -68,7 +69,7 @@ const Nav = () => {
 
     if(language === 'LT') {
         return(
-           <nav className="lt">
+           <nav>
             <select className="EN-LT-RU" onChange={(e) => {
                 localStorage.setItem('language', e.target.value)
                 window.location.reload(false);
@@ -78,17 +79,72 @@ const Nav = () => {
                 <option value="RU">RU</option>
             </select>
             
+            <div className="logo">
+               <Link className="link-main-name" title="to home" to='/'><img src={log} alt="Neringa" /></Link>
+            </div>
 
             <div className="nav-link-wrap">
             {navigationLT.map((link, num) => {
                     return(
-                        <Link className={link.path === curLinkPath ? 'curLink': null} key={num} title={link.name === 'Kontaktai ir Rezervacija' ? link.name + ' &#128394;' : link.name} to={link.path} >{link.name === 'Kontaktai ir Rezervacija' ? link.name : link.name}</Link>
+                        <Link className={link.path === curLinkPath ? 'curLink': null} key={num} title={link.name} to={link.path} >{link.name}</Link>
                     )
                 })}
             </div>
 
         </nav> 
         )
+}else if (language === 'RU') {
+    return(
+        <nav>
+         <select className="EN-LT-RU" onChange={(e) => {
+             localStorage.setItem('language', e.target.value)
+             window.location.reload(false);
+         }}>            
+             <option value="RU">RU</option>
+             <option value="ENG">ENG</option>
+             <option value="LT">LT</option>
+         </select>
+         
+         <div className="logo">
+            <Link className="link-main-name" title="to home" to='/'><img src={log} alt="Neringa" /></Link>
+         </div>
+
+         <div className="nav-link-wrap">
+         {navigationRU.map((link, num) => {
+                 return(
+                     <Link className={link.path === curLinkPath ? 'curLink': null} key={num} title={link.name} to={link.path} >{link.name}</Link>
+                 )
+             })}
+         </div>
+
+     </nav> 
+     )
+}else {
+    return(
+        <nav>
+         <select className="EN-LT-RU" onChange={(e) => {
+             localStorage.setItem('language', e.target.value)
+             window.location.reload(false);
+         }}>            
+             <option value="ENG">ENG</option>
+             <option value="RU">RU</option>
+             <option value="LT">LT</option>
+         </select>
+         
+         <div className="logo">
+            <Link className="link-main-name" title="to home" to='/'><img src={log} alt="Neringa" /></Link>
+         </div>
+
+         <div className="nav-link-wrap">
+         {navigationENG.map((link, num) => {
+                 return(
+                     <Link className={link.path === curLinkPath ? 'curLink': null} key={num} title={link.name} to={link.path} >{link.name}</Link>
+                 )
+             })}
+         </div>
+
+     </nav> 
+     )
 }
 }
 

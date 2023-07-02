@@ -1,0 +1,39 @@
+.logo {
+    width: 5%;
+}
+img {
+    width: 100%;
+}
+
+nav {
+    max-width: 100%;
+    margin: auto 10%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrap{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: end;
+}
+
+.nav-link-wrap a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    margin: 0 5%;
+}
+
+.nav-link-wrap a:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+.EN-LT-RU {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

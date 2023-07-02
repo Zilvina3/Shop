@@ -2,6 +2,10 @@ import { Routes, Route} from "react-router-dom"
 import Home from "./Components/MainComponents/Home/Home";
 import { useState, useEffect } from "react";
 import Layout from "./Components/Layout/Layout";
+import About from "./Components/MainComponents/About/About";
+import Shop from "./Components/MainComponents/Shop/Shop";
+import Contacts from "./Components/MainComponents/Contacts/Constacts";
+import './App.css';
 
 function App() {
 
@@ -21,19 +25,19 @@ function App() {
     },
     {
       path : '/about',
-      element : <div>2</div>
+      element : <Layout children={<About />} />
   },
     {
         path : 'shop',
-        element : <div>3</div>
+        element : <Layout children={<Shop />} />
     },
     {
       path : 'Contacts',
-      element : <div>4</div>
+      element : <Layout children={<Contacts />} />
   },
     {
       path : '*',
-      element : <div>wrong path</div>
+      element : <Layout children={<div>wrong path</div>} />
   },
 ];
   
