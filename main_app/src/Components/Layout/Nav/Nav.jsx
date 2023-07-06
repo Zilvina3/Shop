@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import log from './logo_black.png'
 import './Nav.css';
 
@@ -65,7 +65,6 @@ const Nav = () => {
 
     let curLinkPath = window.location.pathname
 
-    console.log(curLinkPath)
 
     if(language === 'LT') {
         return(

@@ -1,0 +1,49 @@
+.footer_wrap {
+    margin-top: auto;
+    border-top: 2px solid black;
+}
+
+.footer_con_link_log_wrap {
+    margin: auto 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_phone, .footer_email {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+
+.push {
+    width: 80%;
+}
+
+.footer_contact_img {
+    width: 20px;
+}
+
+.footer_contacts_wrap, .footer_links_wrap, .footer_logos_wrap {
+    padding: 10px;
+    width: 33%;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_links a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer_links a:hover {
+    color: blue;
+}
+
+.copy_rigths {
+    text-align: center;
+}
