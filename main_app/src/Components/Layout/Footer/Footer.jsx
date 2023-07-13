@@ -27,13 +27,16 @@ const Footer = () => {
                     <h1>Nuorodos</h1>
                         <div className='footer_links'>
                             <Link to='/' >Pagrindinis</Link>
-                            <Link to='/' >Apie</Link>
-                            <Link to='/' >Parduotuve</Link>
+                            <Link to='/about' >Apie</Link>
+                            <Link to='/shop' >Parduotuve</Link>
                         </div>
                 </div>
     
                 <div className='footer_logos_wrap'>
                     <h1>Logos</h1>
+                    <div className='footer_links'>
+                    <Link to='/shop' >Ebay</Link>
+                    </div>
                 </div> 
                 </div>
     
@@ -60,13 +63,16 @@ const Footer = () => {
                     <h1>Links</h1>
                         <div className='footer_links'>
                             <Link to='/' >Main</Link>
-                            <Link to='/' >About</Link>
-                            <Link to='/' >Shop</Link>
+                            <Link to='/about' >About</Link>
+                            <Link to='/shop' >Shop</Link>
                         </div>
                 </div>
     
                 <div className='footer_logos_wrap'>
                     <h1>Logos</h1>
+                    <div className='footer_links'>
+                    <Link to='/shop' >Ebay</Link>
+                    </div>
                 </div> 
                 </div>
     
@@ -93,13 +99,16 @@ const Footer = () => {
                     <h1>Ссылки</h1>
                         <div className='footer_links'>
                             <Link to='/' >Основной</Link>
-                            <Link to='/' >Информация</Link>
-                            <Link to='/' >Магазин</Link>
+                            <Link to='/about' >Информация</Link>
+                            <Link to='/shop' >Магазин</Link>
                         </div>
                 </div>
     
                 <div className='footer_logos_wrap'>
                     <h1>Logos</h1>
+                    <div className='footer_links'>
+                    <Link to='/shop' >Ebay</Link>
+                    </div>                 
                 </div> 
                 </div>
     

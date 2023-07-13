@@ -1,0 +1,27 @@
+.LeftRightBox {
+    border: 2px solid red;
+    margin: 10px 8%;
+    padding: 4%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.boxLeft {
+    border: 2px solid green;
+    width: 650px;
+    height: 400px;
+    padding: 10px;
+}
+
+.boxRight {
+    border: 2px solid green;
+    width: 650px;
+    height: 400px;
+    padding: 10px;
+}
+
+.boxLeft h1, .boxRight h1 {
+    text-align: center;
+}

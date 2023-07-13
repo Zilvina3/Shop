@@ -1,6 +1,10 @@
+import LeftRightBox from "../LeftRightBox";
+
 const Home = () => {
     return(
-        <div>home</div>
+        <main className="home">
+            <LeftRightBox/>           
+        </main>
     )
 }
 

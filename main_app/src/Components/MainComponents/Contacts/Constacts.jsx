@@ -1,7 +1,9 @@
+import ContactUs from "./Contact";
+
 const Contacts = () => {
     return(
-        <div>
-            Contacts pages
+        <div className="contacts">
+            <ContactUs />
         </div>
     )
 }
